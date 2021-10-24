@@ -1,0 +1,493 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    background: linear-gradient(to bottom, #2d5b8a 0%,#84d9eb 30%, #4091b1 50%, #383872 75%, #2f2e3a 100%);
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+.bubble {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    animation: floatVertical infinite, floatHorizontal ease-in-out infinite;
+}
+.blueBubble {
+    background-image: url(assets/blueBubble.png);
+    background-size: 50%;
+    opacity: 50%;
+}
+.greenBubble {
+    background-image: url(assets/greenBubble.png);
+    background-size: 30%;
+    opacity: 50%;
+}
+#b1 {
+	animation-duration: 20s, 4s;
+}
+#b2 {
+	animation-duration: 31s, 8s;
+}
+#b3 {
+    animation-duration: 28s, 4s;
+}
+#b4 {
+    animation-duration: 20s, 6s;
+}
+#b5 {
+    animation-duration: 34s, 8s;
+}
+#b6 {
+    animation-duration: 21s, 4s;
+}
+#b7 {
+    animation-duration: 27s, 4s;
+}
+#b8 {
+    animation-duration: 18s, 6s;
+}
+#b9 {
+    animation-duration: 31s, 8s;
+}
+#b10 {
+    animation-duration: 26s, 4s;
+}
+#b11 {
+	animation-duration: 16s, 4s;
+}
+#b12 {
+	animation-duration: 28s, 8s;
+}
+#b13 {
+    animation-duration: 30s, 4s;
+}
+#b14 {
+    animation-duration: 19s, 6s;
+}
+#b15 {
+    animation-duration: 33s, 8s;
+}
+#b16 {
+    animation-duration: 21s, 4s;
+}
+#b17 {
+    animation-duration: 17s, 4s;
+}
+#b18 {
+    animation-duration: 20s, 6s;
+}
+#b19 {
+    animation-duration: 22s, 8s;
+}
+#b20 {
+    animation-duration: 35s, 4s;
+}
+@keyframes floatVertical {
+    0% {top: 5400px;}
+    100% {top: 1100px;}
+}
+@keyframes floatHorizontal { 
+    0% {margin-left: 0px;}
+    50% {margin-left: 50px;}
+    100% {margin-left: 0px;}
+}
+
+#anchor {
+    pointer-events: none;
+    background-image: url(assets/anchor.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top left;
+    position: fixed;
+    transform:translate(-25%,-25%);
+    height: 100px;
+    width: 100px;
+}
+.mouseAni {
+    animation: size .7s ease-in-out;
+}
+@keyframes size {
+    0%, 100% {transform: translate(-25%,-25%);}
+    33% {transform: translate(-25%,-40%);}
+    66% {transform: translate(-25%,-10%);}
+}
+
+#header {
+    top: 0;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+#logo {
+    background-image: url(assets/compass.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    float: left;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 150px;
+    width: 150px;
+}
+.menu {
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    position: relative;
+}
+.menuBtn {
+    background-image: url(assets/map.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    height: 120px;
+    width: 150px;
+}
+.menuContent {
+    right: 0;
+    display: none;
+    position: absolute;
+    width: 160px;
+}
+.menuContent a {
+    height: 30px;
+    margin-top: 10px;
+    background-image: url("assets/wood.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.menuContent a:hover {
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu:hover .menuContent {
+    display: block;
+}
+
+#message {
+    position: relative;
+    margin-top: 10px;
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+}
+#sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.cloud {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url("assets/cloud.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    animation: move linear infinite;
+}
+.cloud1 {
+    top: 70px;
+    animation-duration: 22s;
+}
+.cloud2 {
+    top: 150px;
+    animation-duration: 15s;
+}
+.cloud3 {
+    top: 250px;
+    animation-duration: 10s;
+}
+.cloud4 {
+    top: 320px;
+    animation-duration: 20s;
+}
+.cloud5 {
+    top: 450px;
+    animation-duration: 12s;
+}
+.cloud6 {
+    top: 500px;
+    animation-duration: 20s;
+}
+.cloud7 {
+    top: 550px;
+    animation-duration: 14s;
+}
+@keyframes move {
+    0% {background-position: 2500px}
+    100%{background-position: -2000px}
+}
+
+#ship {
+    background-image: url(assets/ship.png);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    height: 1000px;
+    width: 1000px;
+    transform: rotate(-2deg);
+    animation: swing 5s ease-in-out -1s infinite;
+}
+@keyframes swing {
+  0% {transform: translateY(-25px);}
+  50% {transform: translateY(25px);}
+  100% {transform: translateY(-25px);}
+}
+
+.wave {
+    background-repeat: repeat-x;
+    background-size: 500px;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+}
+.blueWave {
+    background-image: url("assets/blueWaves.png");
+    animation: move 100s linear infinite;
+}
+.blue1 {
+    bottom: 50px;
+}
+.blue2 {
+    bottom: -70px;
+}
+.whiteWave {
+    background-image: url("assets/whiteWaves.png");
+    animation: move 120s linear infinite;
+}
+.white1 {
+    bottom: -20px;
+}
+.white2 {
+    bottom: -140px;
+}
+#wecolming {
+    position: absolute;
+    display: inline-block;
+    vertical-align:middle;
+}
+.letter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-snap-align: start;
+}
+.text {
+    opacity: 0;
+    margin-bottom: 50px;
+    scroll-snap-align: start;
+}
+
+#introduction {
+    display: grid;
+    grid-template-areas: "helmet section1";
+    padding: 300px;
+}
+#section1 {
+    grid-area: section1;
+}
+.introTitle {
+    background-image: url("assets/about-me.png");
+    background-size: 80%;
+}
+.helmet {
+    background-image: url(assets/helmet.png);
+    background-repeat: no-repeat;
+    background-size: 650px;
+    grid-area: helmet;
+    height: 700px;
+    width: 700px;
+    scroll-snap-align: start;
+}
+
+#skills {
+    display: grid;
+    grid-template-areas: "section2 underwater";
+    padding: 300px;
+}
+#section2 {
+    grid-area: section2;
+}
+.skillsTitle {
+    background-image: url("assets/skills.png");
+    background-size: 60%;
+}
+.skillGrid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.skill {
+    background-image: url("assets/wood.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+}
+.skill:hover {
+    font-size: 22px;
+    font-weight: bold;
+}
+.underwater {
+    grid-area: underwater;
+    height: 700px;
+    width: 700px;
+    scroll-snap-align: start;
+}
+.animal {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.blueFish {
+    background-image: url(assets/blueFish.png);
+    animation: swim infinite;
+}
+.orangeFish {
+    background-image: url(assets/orangeFish.png);
+    animation: swim infinite;
+}
+.greenFish {
+    background-image: url(assets/greenFish.png);
+    animation: swim infinite;
+}
+.turtle {
+    background-image: url(assets/turtle.png);
+    animation: swim infinite;
+}
+#fish1 {
+    offset-path: path('M49,122 c184,-65 220,77 650,56');
+    animation-duration: 7s;
+}
+#fish2 {
+    offset-path: path('M47,350 c178,21 116,-20 250,-42 c117,-15 129,3 202,38');
+    animation-duration: 12s;
+}
+#turtle1 {
+    offset-path: path('M38,450 c336,23 197,-65 650,21');
+    animation-duration: 11s;
+}
+#fish3 {
+    offset-path: path('M1,610 c180,44 392,-52 650,0');
+    animation-duration: 20s;
+}
+@keyframes swim {
+    0% {offset-distance: 0%; transform: scaleX(1);}
+    50% {offset-distance: 100%; transform: scaleX(1);}
+    52% {offset-distance: 100%; transform: scaleX(-1);}
+    98% {offset-distance: 0%; transform: scaleX(-1);}
+    100% {offset-distance: 0%; transform: scaleX(1);}
+}
+
+#projects {
+    display: grid;
+    grid-template-areas: "submarine section3";
+    padding: 300px;
+}
+#section3 {
+    grid-area: section3;
+}
+.projectsTitle {
+    background-image: url("assets/projects.png");
+    background-size: 90%;
+}
+.project {
+    margin-top: 20px;
+    background-image: url("assets/wood.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 30px;
+    width: 600px;
+    padding: 15px;
+    text-align: center;
+}
+.project:hover {
+    font-size: 22px;
+    font-weight: bold;
+}
+.submarine {
+    background-image: url(assets/submarine.png);
+    background-repeat: no-repeat;
+    background-size: 650px;
+    grid-area: submarine;
+    height: 700px;
+    width: 700px;
+    scroll-snap-align: start;
+}
+
+#contact {
+    margin-top: 150px;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+.contactTitle {
+    background-image: url("assets/contact_me.png");
+    background-position: center;
+    background-size: 30%;
+    opacity: 0;
+}
+.icon {
+    opacity: 0;
+    margin-right: 20px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+#github {
+    background-image: url("assets/icon_github.png");
+}
+#github:hover {
+    background-image: url("assets/icon_github_selected.png");
+}
+#codepen {
+    background-image: url("assets/icon_codepen.png");
+}
+#codepen:hover {
+    background-image: url("assets/icon_codepen_selected.png");
+}
+#linkedin {
+    background-image: url("assets/icon_linkedin.png");
+}
+#linkedin:hover {
+    background-image: url("assets/icon_linkedin_selected.png");
+}
+#email {
+    background-image: url("assets/icon_email.png");
+}
+#email:hover {
+    background-image: url("assets/icon_email_selected.png");
+}
+
