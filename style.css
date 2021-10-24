@@ -383,28 +383,75 @@ body {
     background-image: url(assets/turtle.png);
     animation: swim infinite;
 }
-#fish1 {
-    offset-path: path('M49,122 c184,-65 220,77 650,56');
+/* #fish1 {
+    top: 0px;
     animation-duration: 7s;
 }
 #fish2 {
-    offset-path: path('M47,350 c178,21 116,-20 250,-42 c117,-15 129,3 202,38');
+    top: 200px;
     animation-duration: 12s;
 }
 #turtle1 {
-    offset-path: path('M38,450 c336,23 197,-65 650,21');
+    top: 400px;
     animation-duration: 11s;
 }
 #fish3 {
-    offset-path: path('M1,610 c180,44 392,-52 650,0');
+    top: 600px;
     animation-duration: 20s;
+} */
+#fish1 {
+    top: 0px;
+    animation-duration: 6s;
+}
+#fish2 {
+    top: 45px;
+    left: 80px;
+    animation-duration: 6s;
+}
+#fish3 {
+    top: 80px;
+    animation-duration: 6s;
+}
+#turtle1 {
+    top: 200px;
+    animation-duration: 10s;
+}
+#fish4 {
+    top: 330px;
+    animation-duration: 9s;
+}
+#fish5 {
+    top: 375px;
+    left: 80px;
+    animation-duration: 9s;
+}
+#fish6 {
+    top: 410px;
+    animation-duration: 9s;
+}
+#turtle2 {
+    top: 540px;
+    animation-duration: 7.5s;
+}
+#fish7 {
+    top: 670px;
+    animation-duration: 11s;
+}
+#fish8 {
+    top: 715px;
+    left: 80px;
+    animation-duration: 11s;
+}
+#fish9 {
+    top: 755px;
+    animation-duration: 11s;
 }
 @keyframes swim {
-    0% {offset-distance: 0%; transform: scaleX(1);}
-    50% {offset-distance: 100%; transform: scaleX(1);}
-    52% {offset-distance: 100%; transform: scaleX(-1);}
-    98% {offset-distance: 0%; transform: scaleX(-1);}
-    100% {offset-distance: 0%; transform: scaleX(1);}
+    0% {margin-left: 0px; transform: scaleX(1);}
+    50% {margin-left: 600px; transform: scaleX(1);}
+    52% {margin-left: 600px; transform: scaleX(-1);}
+    98% {margin-left: 0px; transform: scaleX(-1);}
+    100% {margin-left: 0px; transform: scaleX(1);}
 }
 
 #projects {
