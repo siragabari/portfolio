@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow-x: scroll;
     overflow-y: scroll;
     background: linear-gradient(to bottom, #2d5b8a 0%,#84d9eb 30%, #4091b1 50%, #383872 75%, #2f2e3a 100%);
     font-size: 23px;
@@ -377,22 +378,19 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
+    animation: swim infinite;
 }
 .blueFish {
     background-image: url(assets/blueFish.png);
-    animation: swim infinite;
 }
 .orangeFish {
     background-image: url(assets/orangeFish.png);
-    animation: swim infinite;
 }
 .greenFish {
     background-image: url(assets/greenFish.png);
-    animation: swim infinite;
 }
 .turtle {
     background-image: url(assets/turtle.png);
-    animation: swim infinite;
 }
 #fish1 {
     margin-top: 0px;
@@ -442,11 +440,11 @@ body {
     animation-duration: 11s;
 }
 @keyframes swim {
-    0% {margin-left: 0px; transform: scaleX(1);}
-    50% {margin-left: 600px; transform: scaleX(1);}
-    52% {margin-left: 600px; transform: scaleX(-1);}
-    98% {margin-left: 0px; transform: scaleX(-1);}
-    100% {margin-left: 0px; transform: scaleX(1);}
+    0% {margin-left: 0%; transform: scaleX(1);}
+    50% {margin-left: 80%; transform: scaleX(1);}
+    52% {margin-left: 80%; transform: scaleX(-1);}
+    98% {margin-left: 0%; transform: scaleX(-1);}
+    100% {margin-left: 0%; transform: scaleX(1);}
 }
 
 #projects {
