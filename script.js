@@ -78,7 +78,7 @@ let timeline2 = gsap.timeline({scrollTrigger: {
 timeline2.set(".introTitle", {x: "800px", opacity: 0, duration: 2})
         .to(".introTitle", {x: "0px", opacity: 1, duration: 2});
 
-gsap.to(".introDescription", {scrollTrigger: {trigger: ".introDescription", toggleActions: "restart none restart none"}, opacity: 1, duration: 7});
+gsap.to(".introDescription", {scrollTrigger: {trigger: ".introDescription", toggleActions: "restart none none none"}, opacity: 1, duration: 7});
 
 
 /**
@@ -92,7 +92,7 @@ let timeline3 = gsap.timeline({scrollTrigger: {
 timeline3.set(".skillsTitle", {x: "-800px", opacity: 0})
         .to(".skillsTitle", {x: "0px", opacity: 1, duration: 2});
 
-gsap.to(".skillsDescription", {scrollTrigger: {trigger: ".skillsDescription", toggleActions: "restart none restart none"}, opacity: 1, duration: 7});
+gsap.to(".skillsDescription", {scrollTrigger: {trigger: ".skillsDescription", toggleActions: "restart none none none"}, opacity: 1, duration: 7});
 
 let timeline4 = gsap.timeline({scrollTrigger: {
     trigger: ".skillGrid",
@@ -122,7 +122,7 @@ let timeline6 = gsap.timeline({scrollTrigger: {
 timeline6.set(".projectsTitle", {x: "800px", opacity: 0})
         .to(".projectsTitle", {x: "0px", opacity: 1, duration: 2});
 
-gsap.to(".projectsDescription", {scrollTrigger: {trigger: ".projectsDescription", toggleActions: "restart none restart none"}, opacity: 1, duration: 7});
+gsap.to(".projectsDescription", {scrollTrigger: {trigger: ".projectsDescription", toggleActions: "restart none none none"}, opacity: 1, duration: 7});
 
 let timeline7= gsap.timeline({scrollTrigger: {
     trigger: ".examples",
