@@ -322,7 +322,7 @@ body {
 }
 .introTitle {
     background-image: url("assets/about-me.png");
-    background-size: 80%;
+    background-size: 90%;
 }
 .helmet {
     background-image: url(assets/helmet.png);
@@ -457,7 +457,7 @@ body {
 }
 .projectsTitle {
     background-image: url("assets/projects.png");
-    background-size: 90%;
+    background-size: 70%;
 }
 .project {
     margin-top: 20px;
